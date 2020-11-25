@@ -1,0 +1,167 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+
+
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+
+
+
+
+/// Copy text color
+/// @type Color
+$text-color: rgb(34, 34, 34) !default;
+
+/// Main brand color
+/// @type Color
+$brand-color: rgb(229, 0, 80) !default;
+
+/// Light grey
+/// @type Color
+$light-grey: rgb(237, 237, 237) !default;
+
+/// Medium grey
+/// @type Color
+$mid-grey: rgb(153, 153, 153) !default;
+
+/// Dark grey
+/// @type Color
+$dark-grey: rgb(68, 68, 68) !default;
+
+
+
+
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+
+
+
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'small': 320px,
+  'medium': 768px,
+  'large': 1024px,
+) !default;
+
+
+
+
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;
+
+
+
+// Examples....
+/* ----------------Canvas Variable-------------*/
+$audio-canvas-video: false; // True | False
+
+//** Font weights
+// -----------------------------
+$font-weight-bold: 700;
+$font-weight-semibold: 600;
+$font-weight-medium: 400;
+$font-weight-regular: 400;
+$font-weight-light: 300;
+$font-weight-thin: 300;
+
+//** Typography
+// -----------------------------
+$font-name: 'Segoe UI';
+$font-path: '../fonts/segoeui';
+$font-family-segoe-ui: $font-name, Arial, sans-serif !default;
+$font-style-italic: italic;
+$font-smoothing: always;
+
+// Vertical Spacing
+$line-height-base: 1.428571429; // 20/14
+
+//** Settings
+// -----------------------------
+$font-family-base: $font-family-segoe-ui !default;
+$font-size-base: 11px;
+$font-weight-base: $font-weight-regular;
+
+//** original color
+$black: #000 !default;
+$white: #fff !default;
+$red: #f00 !default;
+
+$light-color: #FFF !default;
+$dark-color: #000 !default;
+$accent-color: #f00 !default;
+
+//** generate color
+$gray-base: $gray !default;
+$gray-dark: #5f5f5f !default;
+$gray-light: #373a41 !default;
+$black-base: $black !default;
+$black-dark: darken($black, 80%);
+$black-light: lighten($black, 80%);
+$white-base: $white !default;
+$white-dark: darken($white, 80%);
+$white-light: lighten($white, 80%);
+$red-base: $red !default;
+$red-dark: darken($red, 80%);
+$red-light: lighten($red, 80%);
+
+// Typography Colors
+// all over link color
+$link-font-color: #444444 !default;
+$link-color: #d04526 !default;
+$link-hover-color: #c03d20 !default;
+$link-background-color: $gray-light !default;
+
+$nav-font-color: #444444 !default;
+$nav-link-color: #d04526 !default;
+$nav-link-hover-color: #c03d20 !default;
+$nav-link-background-color: $gray-light !default;
+
+$section-header-font-color: #444444 !default;
+$section-header-link-color: #d04526 !default;
+$section-header-link-hover-color: #c03d20 !default;
+
+$body-font-color: #555555 !default;
+$body-link-color: #d04526 !default;
+$body-link-hover-color: #c03d20 !default;
+
+$footer-font-color: #555555 !default;
+$footer-link-color: #d04526 !default;
+$footer-link-hover-color: #c03d20 !default;
+
+//** Background color
+// -----------------------------
+$header-bg: $gray-dark !default;
+$nav-bg: #adadad !default;
+$body-bg: #efeff0 !default;
+$footer-bg: $gray-dark !default;
+
+$page-offset: 5px;
+
+/* --->>> Responsive     <<<----------*/
+/* -----------------------------------*/
+$screen-small: 768px;
+$screen-Medium: 992px;
+$screen-large: 1200px;
+
+$element-height: 22px;
